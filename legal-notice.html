@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Legal notice</title>
+	<link rel="icon" type="image/x-icon" href="./res/data/favicon.ico">
+	<link href="res/css/app.css" rel="stylesheet" />
+	<link href="res/css/mdb.min.css" rel="stylesheet" />
+	<link href="res/css/fontawesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarText"
+				aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav me-auto mb-lg-0">
+					<li class="nav-item">
+						<a id="profile" class="nav-link" aria-current="page" href="./index.html"></a>
+					</li>
+					<li class="nav-item">
+						<a id="research" class="nav-link" aria-current="page" href="./research.html"></a>
+					</li>
+					<li class="nav-item">
+						<a id="legal-notice" class="nav-link active" href="./legal-notice.html"></a>
+					</li>
+				</ul>
+			</div>
+			<span class="navbar-text">
+				<select id="lang-selector" class="browser-default custom-select" onchange="onLocaleChanged()">
+					<option value="en">English</option>
+					<option value="jp">日本語</option>
+				</select>
+			</span>
+		</div>
+	</nav>
+
+	<div class="container page-container pb-5">
+		<div class="row">
+			<h1 id="unauthorized" class="text-center pt-3"></h1>
+		</div>
+
+		<div class="row">
+			<h3 class="mt-3">
+				<span id="contact"></span>:
+				<span>
+					<a href="mailto:junko.levay@student.hu-berlin.de">junko.levay@student.hu-berlin.de</a>
+				</span>
+			</h3>
+		</div>
+
+		<div class="row">
+			<h3 id="credits" class="col-12 section-header"></h3>
+			<div class="col-12">
+				<ul class="list-group list-group-light list-group-small">
+					<li id="c-1" class="list-group-item"></li>
+					<li id="c-2" class="list-group-item"></li>
+					<li id="c-3" class="list-group-item"></li>
+					<li id="c-4" class="list-group-item"></li>
+					<li id="c-5" class="list-group-item"></li>
+					<li class="list-group-item">Mag. Barbara Stadler</li>
+					<li class="list-group-item">Geon Lee and Antonio Lončarević</li>
+					<li class="list-group-item">Alexander Foret</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="res/js/app.js"></script>
+<script type="text/javascript" src="res/js/mdb.min.js"></script>
+<script>
+	const langRes = {
+		"en": {
+			"profile": "Profile",
+			"research": "Research",
+			"legal-notice": "Legal notice",
+			"unauthorized": "Unauthorized use of the website’s content is prohibited.",
+			"contact": "Contact",
+			"credits": "Credits",
+			"c-1": "United Nations Vienna",
+			"c-2": "Supreme Court Vienna",
+			"c-3": "Palace of Justice Vienna",
+			"c-4": "Austrian Parliament",
+			"c-5": "University of Vienna"
+		},
+		"jp": {
+			"profile": "私について",
+			"research": "研究について",
+			"legal-notice": "法的通知",
+			"unauthorized": "ウェブサイトのコンテンツの無断使用を禁じます。",
+			"contact": "連絡先",
+			"credits": "感謝",
+			"c-1": "国連ウィーン",
+			"c-2": "最高裁判所",
+			"c-3": "ウィーン司法宮殿",
+			"c-4": "オーストリア議会",
+			"c-5": "ウィーン大学"
+		}
+	};
+
+	loadLocale(langRes);
+
+	function onLocaleChanged() {
+		setLocale(langRes);
+	}
+</script>
+
+</html>
