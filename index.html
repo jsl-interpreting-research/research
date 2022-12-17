@@ -53,32 +53,6 @@
 				</span>
 			</div>
 		</div>
-
-		<div class="row">
-			<h4 id="docs" class="section-header"></h4>
-			<ul class="list-group list-group-light list-group-small">
-				<li class="list-group-item">
-					<div class="row">
-						<div class="col-12 d-flex align-items-center">
-							<div id="docs-1" class="flex-grow-1 ps-2"></div>
-							<div>
-								<a id="docs-1a" class="btn btn-primary" role="button" download></a>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="list-group-item">
-					<div class="row">
-						<div class="col-12 d-flex align-items-center">
-							<div id="docs-2" class="flex-grow-1 ps-2"></div>
-							<div>
-								<a id="docs-2a" class="btn btn-primary" role="button" download></a>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
 	</div>
 </body>
 
@@ -90,41 +64,18 @@
 			"research": "Research",
 			"legal-notice": "Legal notice",
 			"instagram": "Instagram",
-			"docs": "Documents",
-			"docs-1": "Consent form",
-			"docs-1a": "Download",
-			"docs-2": "Information sheet on data protection and research project",
-			"docs-2a": "Download",
 		},
 		"jp": {
 			"research": "研究について",
 			"legal-notice": "法的通知",
 			"instagram": "インスタグラム",
-			"docs": "書類",
-			"docs-1": "研究参加の同意書",
-			"docs-1a": "ダウンロード",
-			"docs-2": "データ保護と研究プロジェクトについての情報⽤紙",
-			"docs-2a": "ダウンロード",
 		}
 	};
 
-	const downloads = {
-		"en": {
-			"docs-1a": "Consent form.pdf",
-			"docs-2a": "Information sheet on data protection and research project.pdf",
-		},
-		"jp": {
-			"docs-1a": "研究参加の同意書.pdf",
-			"docs-2a": "データ保護と研究プロジェクトについての情報⽤紙.pdf",
-		}
-	}
-
 	loadLocale(langRes);
-	setHrefLocale(downloads);
 
 	function onLocaleChanged() {
 		setLocale(langRes);
-		setHrefLocale(downloads);
 	}
 </script>
 
